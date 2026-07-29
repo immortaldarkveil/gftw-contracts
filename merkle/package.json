@@ -1,0 +1,9 @@
+{
+  "name": "gftw-merkle",
+  "private": true,
+  "type": "module",
+  "description": "Generates the GFTW migration Merkle tree (OZ standard-v1 compatible) from the GFT snapshot CSV",
+  "dependencies": {
+    "@noble/hashes": "1.8.0"
+  }
+}

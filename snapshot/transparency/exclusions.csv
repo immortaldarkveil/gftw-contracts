@@ -1,0 +1,16 @@
+# GFTW migration exclusion list — DRAFT, requires project-lead sign-off.
+# Format: address,label  (first column used; # lines ignored)
+#
+# Tier 1 — scheme wallets (confirmed on-chain):
+0x7c0629bbbaf7d68ffaa393e3fedc9b633679fa5f,operator treasury: received initial 1.04B deployment mint; same operators executed the Nov 27 2024 mints
+0xbcbcf229abe605039235395679f6a80ae3957072,GFT contract deployer (99 GFT dust)
+#
+# Tier 2 — custodial exchange wallets: DECISION PENDING.
+# These were NOT party to the scheme; they hold retail users' GFT. Excluding
+# them means exchange-held users get nothing on-chain; including them sends
+# GFTW to exchange custody. Labels below are unverified — confirm on BscScan
+# before finalizing. Uncomment to exclude.
+#0xf977814e90da44bfa03b6295a0616a897441acec,likely Binance hot wallet (200M GFT)
+#0x8894e0a0c962cb723c1976a4421c95949be2d4e3,likely Binance hot wallet (147M GFT)
+#0xe2fc31f816a9b94326492132018c3aecc4a93ae1,likely MEXC hot wallet (46M GFT)
+#0x0d0707963952f2fba59dd06f2b425ace40b492fe,likely Gate.io hot wallet (26M GFT)

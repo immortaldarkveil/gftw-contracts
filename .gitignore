@@ -1,0 +1,40 @@
+# Compiler files
+cache/
+out/
+
+# Commonly ignored directories
+.logs/
+.ignore/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Docs
+docs/
+
+# Dotenv file
+.env
+.env.*
+!.env.example
+
+# merkle tooling
+merkle/node_modules/
+merkle/out/
+merkle/sample.csv
+
+# testnet throwaway key
+.testnet-deployer.json
+
+# local run artifacts (fork/anvil) — never publish; they read as real deployments
+broadcast/
+
+# held back until the treasury Safe is deployed (see conversation): naming the
+# cold-wallet owners before the multisig exists gives attackers a head start
+DEPLOYMENT_PARAMS.md
+# internal review brief - shared directly with the reviewing engineer
+ENGINEER_HANDOFF.md
+
+# CI workflow held locally: pushing it needs the "workflow" OAuth scope
+.ci-pending/
